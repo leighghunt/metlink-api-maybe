@@ -165,6 +165,65 @@ The returned JSON object contains 2 top level items:
       ]
 ```
 
+## `/api/v1/ServiceMap/<SERVICE>`
+
+Examples:
+
+- `https://www.metlink.org.nz/api/v1/ServiceMap/KPL` (Kapiti Line)
+
+
+The returned JSON object contains 2 top level items:
+
+- `LastModified` - an RFC3339 formated timestamp related to this query. Ex: `2016-05-26T14:04:47+12:00`
+
+- `StopLocations` - A list of stops with Id and Location.
+
+- `RouteMaps` - A list of one or more Paths.
+
+```
+{
+  "Code": "KPL",
+  "TrimmedCode": "KPL",
+  "Name": "Kapiti Line (Waikanae - Wellington)",
+  "Mode": "Train",
+  "Link": "/timetables/train/KPL",
+  "LastModified": "2019-02-22T16:52:18+13:00",
+  "StopLocations": [
+    {
+      "Sms": "WELL",
+      "LatLng": "-41.2789686,174.7805617,0"
+    },
+    {
+      "Sms": "TAKA2",
+      "LatLng": "-41.1852983,174.8282579,0"
+    },
+    ...
+ ],
+ "RouteMaps": [
+    {
+      "Path": [
+        "-41.2789686,174.7805617",
+        "-41.2758822,174.7832108",
+        "-41.2743233,174.7840647",
+        "-41.2731312,174.7840647",
+        "-41.2713279,174.7832921",
+        "-41.2695245,174.7823568",
+        "-41.2680573,174.7822755",
+        "-41.2668958,174.7827228",
+        ...
+      ]
+    },
+    {
+      "Path": [
+        "-41.0838894,174.8672587",
+        "-41.0866603,174.867801",
+        "-41.0895589,174.8665594",
+        ...
+      ]
+    }
+  ]
+}
+```
 # Working Software
 
 
