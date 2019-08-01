@@ -165,6 +165,40 @@ The returned JSON object contains 2 top level items:
       ]
 ```
 
+## `/api/v1/StopNearby/<LATITUDE>/<LONGITUDE>
+
+Examples:
+
+- `https://www.metlink.org.nz/api/v1/StopNearby/-41.2886/174.7770`
+
+The returned JSON object an array of items:
+
+- `Name` - The name of the stop
+- `Sms` - The Stop ID
+- `Lat` - The Latitude of the Stop
+- `Long` - The Longitude of the Stop
+
+```
+[
+  {
+    "Name": "Manners Street at Willis Street",
+    "Sms": "5006",
+    "Farezone": "1",
+    "Lat": -41.2895508,
+    "Long": 174.7749028,
+    "LastModified": "2019-08-01T00:00:59+12:00"
+  },
+  {
+    "Name": "Willis Street at Willbank Court",
+    "Sms": "5510",
+    "Farezone": "1",
+    "Lat": -41.288011,
+    "Long": 174.7754582,
+    "LastModified": "2019-08-01T00:01:09+12:00"
+  },
+  {
+```
+
 ## `/api/v1/ServiceMap/<SERVICE>`
 
 Examples:
