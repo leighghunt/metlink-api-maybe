@@ -171,7 +171,7 @@ Examples:
 
 - `https://www.metlink.org.nz/api/v1/StopNearby/-41.2886/174.7770`
 
-The returned JSON object an array of items:
+The returned JSON object contains an array of items:
 
 - `Name` - The name of the stop
 - `Sms` - The Stop ID
