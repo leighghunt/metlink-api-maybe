@@ -165,7 +165,7 @@ The returned JSON object contains 2 top level items:
       ]
 ```
 
-## `/api/v1/StopNearby/<LATITUDE>/<LONGITUDE>
+## `/api/v1/StopNearby/<LATITUDE>/<LONGITUDE>`
 
 Examples:
 
